@@ -1,0 +1,33 @@
+html, body {
+  font-family: "Courier New", monospace;
+  height: 100%;
+}
+
+#serif {
+  font-family: serif;
+}
+
+#sansserif {
+  font-family: "sans-serif;
+}
+
+#mono {
+  font-family: monospace;
+}
+
+#courier {
+  font-family: "Courier New", monospace;
+}
+
+textarea {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+}
+
+#view {
+  display: grid;
+  grid-template-columns: auto auto;
+}

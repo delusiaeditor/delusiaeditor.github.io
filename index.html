@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Delusia Story Editor</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Delusia Story Editor</h1>
+    <p>A little editor for drafting short interactive stories or whatever else you want to make with it. Separate each passage with four dashes (----). You can add HTML code to your passages.</p>
+    <span>Text Color: </span><input type="color" id="text"> <span>BG Color: </span><input type="color" value="#ffffff" id="bg">
+  <span>Font: </span><select name="font" id="font">
+  <option id="serif" value="serif">Serif</option>
+  <option id="sansserif" value="sans-serif">Sans-Serif</option>
+  <option id="mono" value="monospace">Monospace</option>
+</select> <span>Title: </span><input type="text" id="title">
+</br>
+    <div id="view"><textarea id="story"></textarea><iframe id="htmlview"></iframe></div>
+    <button id="play" onClick="play()">Play</button>
+    <button id="save" onClick="save()">Save</button>
+    <button id="export" onClick="exportF()">Export as HTML</button>
+    <script src="script.js"></script>
+  </body>
+</html>
